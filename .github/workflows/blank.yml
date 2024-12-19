@@ -53,8 +53,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      #- name: Generate SSH Key
-      #  run: ./generate_ssh_key.sh
+      - name: Generate SSH Key
+        run: ./generate_ssh_key.sh
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
